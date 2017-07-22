@@ -1,9 +1,285 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Comfort</title>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+	<meta name="descritpion" content="">
+	<meta name="keywords" content="Батареи, отопление, комфорт, электросбережение, электросберегающие батареи">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Подключение стилей -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+<script>
+    function AjaxFormRequest(result_id,formMain,url) {
+                jQuery.ajax({
+                    url:     url,
+                    type:     "POST",
+                    dataType: "html",
+                    data: jQuery("#"+formMain).serialize(), 
+                    success: function(response) {
+                    document.getElementById(result_id).innerHTML = response;
+                },
+                error: function(response) {
+                document.getElementById(result_id).innerHTML = "<p>Возникла ошибка при отправке формы. Попробуйте ещё раз</p>";
+                }
+             });
+
+             $(':input','#formMain')
+ 				.not(':button, :submit, :reset, :hidden')
+ 				.val('')
+ 				.removeAttr('checked')
+ 				.removeAttr('selected');
+    }
+</script>
+
 </head>
 <body>
-	<h1>привет мир!</h1>
+<section id="first">
+	<article>
+		<div class="header_menu">
+			<a href="#about" class="left-menu scrollto">О нас</a>
+			<a href="#whyme" class="left-menu scrollto">Преимущества</a>
+			<div class="logo"><a href="#first" class="scrollto"><p class="text_logo">skg<span>s</span></p><p class="text_under_logo f12px">комфорт в вашем доме</p></a></div>
+			<a href="#variants" class="right-menu scrollto">Применение</a>
+			<a href="#ceni" class="right-menu scrollto">Расчет цены</a>
+		</div>
+		<div class="main">
+			<p>we are. skgs</p>	
+		</div>	
+			<a href="#about" class="button_more scrollto"><p>подробнее о нас</p></a>
+	</article>
+</section>
+<section id="about">
+	<article>
+		<div class="abt_content">
+			<h2>о нас</h2>
+			<h5>Мы расскажем Вам немного о себе и о данных батареях</h5>
+		</div>
+		<div class="left_photo"></div>
+		<div class="right_text"><h4>Мы являемся официальными дилерами в г. Сочи и Краснодарского края</h4><h4>Что это вообще такое?</h4>
+		<p>Настенная электрическая система отопления OWEL Comfort («Комфорт») использует защищенный международным патентом нагревающий кабель «Комфорт» компактно размещенный в металлическом корпусе, покрытом стойкой к различным агрессивным воздействиям внешней среды порошковой эмалью.</p> 
+		<p>Система автономного электрического отопления Comfort - это равномерное распределение температуры по всей площади, которое создает тепловую завесу.</p>
+		<p>Устанавливая их на самых холодных стенах, вы избегаете такого явления, как <b>“сырые углы”</b>.</p>
+		<a href="#whyme" class="scrollto">Что дальше?</a>
+		</div>
+	</article>
+</section>
+<section id="whyme">
+	<article>
+		<div class="why_comfort">
+		<h2>Преимущества системы</h2>
+		<h5>Рассмотрим несколько преимуществ данной системы, по сравнению с другими на рынке</h5>
+		</div>
+		<div class="icons">
+			<div class="one"><i class="fa fa-fire-extinguisher" aria-hidden="true"></i><div class="two"><span>Не сжигает кислород</span><p>Невысокая температура нагревательных элементов позволяет предотвращать осушение воздуха</p></div></div>
+			<div class="one"><i class="fa fa-shield" aria-hidden="true"></i><div class="two"><span>Безопасны в использовании</span><p>Система КОМФОРТ безопасна для людей и животных - полностью исключается вероятность ожогов и травм</p></div></div>
+			<div class="one"><i class="fa fa-bolt" aria-hidden="true"></i><div class="two"><span>Стабильны</span><p>Низкий уровень потребления электроэнергии позволит экономить каждый месяц значительные суммы коммунальных платежей</p></div></div><!-- <br> -->
+			<div class="one"><i class="fa fa-google-wallet" aria-hidden="true"></i><div class="two"><span>Экономны</span><p>Полное отсутствие расходов по эксплуатации системы на всем протяжении службы системы</p></div></div>
+			<div class="one"><i class="fa fa-cubes" aria-hidden="true"></i>	<div class="two"><span>Эргономичны</span><p>Малые размеры системы практически незаметны в домах и вписываются в любой дизайн интерьера</p></div></div>
+			<div class="one"><i class="fa fa-street-view" aria-hidden="true"></i><div class="two"><span>Независимы</span><p>Система полностью автономна - задав температуру в помещении один раз, она будет поддерживаться всегда.</p></div></div>
+		</div>
+	</article>
+</section>
+<section id="variants">
+	<article>
+		<div class="var_head">
+			<h2>варианты применения</h2>
+			<h5>Итак, мы столкнулись с вопросом: а где же их возможно устанавливать? Готовы сказать - практически везде.</h5>
+			<div class="var_photo"></div>
+			<div class="var_prim">
+				<div class="var_one"><i class="fa fa-cube" aria-hidden="true"></i><div class="var_two"><span>Технические помещения</span><p>Использование данных батарей в техническом помещении возможно в нескольких исполнениях, и обсуждаются строго индивидуально. Очень многое зависит от типа помещений и как они используются.</p>
+					</div>
+				</div>
+				<div class="var_one"><i class="fa fa-home" aria-hidden="true"></i><div class="var_two"><span>Частные дома и квартиры</span><p>Здесь всё намного проще - любое жилое помещение возможно оборудовать данной системой, однако, к каждому помещению так же необходим индивидуальный подход, так как есть разница в отоплении деревянного дома либо бетонного.</p>
+					</div>
+				</div>
+				<div class="var_one"><i class="fa fa-medium" aria-hidden="true"></i><div class="var_two"><span>Применяется везде, где необходимо тепло</span><p>Если вкратце Вам сказать, данная технология может использоваться где угодно, начиная от домов и квартир, заканчивая передвижными ТС, где есть 220 Вт. Они настолько универсальны и удобны, что РЖД сделали закупку на свои поезда нового поколения.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+</section>
+<section id="feeds">
+	<article>
+	<div class="feed_name">
+		<h2>Что говорят наши клиенты</h2>
+		<div class="cd-testimonials-wrapper">
+		<ul class="feed1">
+		<li>
+		<p class="top_text">Эти батареи великолепны</p>
+		<span>Поставил эти батареи себе в частный дом, экономия колоссальная! Я думал, что потребление электроэнергии будет довольно большим, но на деле оказалось совсем малым и очень выгодным для меня. Теперь я не переживаю за возможную плесень, при недостаточности тепла, и не переживаю за лишнюю копейку, которую я трачу уже по своим нуждам.</span>
+		<p class="name">Ефимов Сергей / <span class="company">Частный дом</span></p>
+		</li>
+		<li>
+		<p class="top_text">Не ждала от них такого</p>
+		<span>Здравствуйте! Спасибо Вам, что подсказали мне способ для отопления моей квартиры. В моем доме нет газа, а электричество довольно дорогое, почти 7р за 1квт. Эти батареи позволяют мне экономить, хотя раньше приходилось отапливатья инфрокрасными или простыми радиаторами. В общем, спасибо ещё раз, я очень рада, что у меня в доме тепло.</span>
+		<p class="name">Евгения Казакова / <span class="company">Квартира</span></p>
+		</li>
+		<li>
+		<p class="top_text">Для офиса просто отличны</p>
+		<span>Уважаемые сотрудники данной компании! Благодарим Вас за предоставление данной технологии. Мы используем её в наших офисах, вместо кондиционеров. И не дорого, и компактно, а возможность выбирать цвета просто поразила! Рекомендую всем, кто хочет грамотное отопление.</span>
+		<p class="name">Королёв Евгений / <span class="company">ООО "СитиСтрой"</span></p>
+		</li>
+		</ul>
+		</div>
+</div>
+	</article>
+</section>
+<section id="ceni">
+	<article>
+		<div class="var_head">
+			<h2>Цена на систему Комфорт</h2>
+			<h5>Вот и самое главное - Сколько это стоит? <br>Давайте посчитаем</h5>
+			<div class="var_photo2"></div>
+			<div class="var_prim2">
+				<div class="var_two"><div class="var_three"><span>Расчет</span><p>Цена на электрическую систему «Комфорт» зависит от площади жилого помещения в которой производится монтаж. Для расчета количества элементов необходимо учитывать тип помещения и высоту потолков.<br><br>
+				Один обогревательный элемент при высоте 2,5-2,7 м способен обогреть:<br>
+				Производственное помещение (16ОС) – 3 кв.м.<br>
+				Служебно-техническое помещение (18ОС) – 2,6 кв.м.<br>
+				Жилые здания, больницы, офисы (21ОС) – 2,4 кв.м.<br>
+				Если отопление выступает в качестве дополнительной системы отопления, площадь увеличится вдовое.</p>
+					</div>
+				</div>
+				<div class="var_two"><div class="var_three"><span>Как понять, сколько нужно элементов системы?</span><p>На рисунке слева - жилое помещение площадью 22 кв.м. и выстой потолка 2,5 кв.м. На основании указанных выше параметров получаем, что комплект для системы комфорт в качестве основного отопления потребует:<br>
+				Греющих элементов С-160 – 9 шт.<br>
+				Комплект штекеров для подключения (внутр.+наруж.) – 8 шт.<br>
+				Заглушка – 4 шт.<br>
+				Терморегулятор – 4 шт.<br>
+				В данном примере можно сократить количество терморегуляторов, но важно помнить, что один терморегулятор может обслуживать не более 10 последовательно соединённых панелей. Для приведенного примера можно использовать 1 терморегулятор, но при этом сложно добиться одинаковой температуры во всех помещениях и могут увеличится затраты на электроэнергию.</p>
+					</div>
+				</div>
+	<table>
+		<tr><th colspan="4">Давайте посчитаем</th></tr>
+ 			<tr>
+ 			 <td>№</td>
+  			<td>Наименование</td>
+  			<td>Ед. изм</td>
+  			<td>Цена</td>
+			</tr>
+		<tr>
+		  <td>1</td>
+		  <td>Панель греющая С-160 (500х142х25)</td>
+		  <td>1шт.</td>
+		  <td>1800 руб.</td>
+		</tr>
+		<tr>
+		  <td>2</td>
+		  <td>Штекеры для подключения (внешний + внутренний)</td>
+		  <td>1 к-т.</td>
+		  <td>450 руб.</td>
+		</tr>
+		<tr>
+		  <td>3</td>
+		  <td>Терморегулятор TE-4 (Россия)</td>
+		  <td>1шт.</td>
+		  <td>1500 руб.</td>
+		</tr>
+		<tr>
+		  <td>4</td>
+		  <td>Заглушка</td>
+		  <td>1шт.</td>
+		  <td>20 руб.</td>
+		</tr>
+		<tr>
+		  <td>5</td>
+		  <td>Провод ВВП нг 3х1,5</td>
+		  <td>1м</td>
+		  <td>60 руб.</td>
+		</tr>
+		<tr>
+		  <td>6</td>
+		  <td>Электроизоляция</td>
+		  <td>1м</td>
+		  <td>30 руб.</td>
+		</tr>
+ </table>
+ <span class="raschet">Рассчитаем окончательную стоимость материалов</span><br>
+ <p class="sum">СУММА = 9*1800 + 8*450 + 4*20 + 4*1500 = 25880 руб. (4 терморегулятора)</p>
+ <div class="over"><span>В заключение, сделаем расчет потребления электроэнергии.<br><br> 9 панелей потребляют 1440 Вт (1,44 кВт). Работают они в зимнее время около 6 часов в день, что составит 8,64 кВт в сутки или 259,2 кВт в месяц. С учетом самого дорого тарифа на электроэнергию (4,55 руб. за кВт), ежемесячный платеж составит 1179 рублей, в том случае если весь этот месяц будут стоять морозы.</span><br><br>
+ <span>Как видно из приведенного примера, электрическая отопительная система «Комфорт» обходится значительно дешевле всех возможных альтернатив.</span></div>
+				</div>
+			</div>
+		</div>
+	</article>
+</section>
+<section id="info">
+	<article>
+	<div class="footer">
+		<div class="left_info">
+		 <div><i class="fa fa-map-marker" aria-hidden="true"></i><h4>Контактная информация</h4>
+		 	<p>По любым вопросам обращайтесь к нам в офис, либо звоните по телефону, указанному ниже</p>
+				<p>Адрес:</p>
+					<p>ул. Конституции, д. 44/4, оф. 38</p>
+				<p>Телефон:</p>
+					<p>+79180087575</p>
+				<p>Почта:</p>
+					<p>mail@skgs.su</p>
+				 <div class="social f25px">
+						<a href="https://vk.com/andrewgavrilov_me"><i class="fa fa-vk bw" aria-hidden="true"></i></a>
+						<a href="https://vk.com/andrewgavrilov_me"><i class="fa fa-facebook-official bw" aria-hidden="true"></i></a>
+						<a href="https://vk.com/andrewgavrilov_me"><i class="fa fa-youtube-play bw aria-hidden="true"></i></a>
+						<a href="https://vk.com/andrewgavrilov_me"><i class="fa fa-instagram bw" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2889.254188054665!2d39.73265365276565!3d43.601248826082454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x40f5cbe962ff5c67%3A0x29452ef299321e1e!2z0YPQuy4g0JrQvtC90YHRgtC40YLRg9GG0LjQuCwgNDQ0NCwg0KHQvtGH0LgsINCa0YDQsNGB0L3QvtC00LDRgNGB0LrQuNC5INC60YDQsNC5LCAzNTQwNTc!3m2!1d43.6016531!2d39.732513999999995!5e0!3m2!1sru!2sru!4v1494858452411" width="373" height="258" frameborder="0" style="border: 2px solid #666666; border-radius: 7px;" allowfullscreen></iframe></div>
+		<div class="letter">
+			<i class="fa fa-envelope-o" aria-hidden="true"></i><h4>Есть вопрос? Напиши и мы ответим</h4>
+			<div class="icons_form">
+				<form action ="" method="post" id="formMain" name="formMain" class="form1 clearfix">
+					<span class="icon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+					<input type="name" name="name" id="name" placeholder="Имя" class="cell" maxlength="20" required>
+					<span class="icon2"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+					<input type="email" name="email" id="email" placeholder="E-mail" class="cell" maxlength="20" required="@">
+					<span class="icon3"><i class="fa fa-phone" aria-hidden="true"></i></span>
+					<input type="tel" name="phone" id="phone" placeholder="Телефон (не обязательно)" maxlength="20" class="cell">
+					<span class="icon4"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+					<textarea type="textarea" name="message" id="message" placeholder="Сообщение" class="msg" required></textarea>
+					<input id="button" type="button" class="send" value="Отправить" onclick="AjaxFormRequest('messageResult', 'formMain', 'form.php')"/>
+				</form>
+			</div>
+		</div><div id="messageResult">ОСтавьте данные</div>
+		</div>
+	</article>
+</section>
+<section id="footer_bar">
+<article>
+	<div class="logo"><a href="#first" class="scrollto"><p class="text_logo">skg<span>s</span></p><p class="text_under_logo f10px">комфорт в вашем доме</p></a></div>
+	<div class="copy"><span>2017 ® Все права защищены - SKGS Comfort</span></div>
+	<div class="links">
+		<span>Политика конфиденциальности</span>
+		<span>FAQ</span>
+	</div>
+</article>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="modal_form"><!-- Сaмo oкнo --> 
+      <span id="modal_close">X</span> <!-- Кнoпкa зaкрыть --> 
+      Ваше сообщение отправлено!
+      Спасибо за использование нашего сервиса!
+</div>
+<div id="overlay"></div><!-- Пoдлoжкa -->
+
+<script src="https://use.fontawesome.com/0279959ac4.js"></script>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/headhesive.min.js"></script>
 </body>
 </html>

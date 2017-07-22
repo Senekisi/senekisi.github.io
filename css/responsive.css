@@ -1,0 +1,130 @@
+@media screen and (max-width: 1024px) {
+
+	article {
+		width: 80%;
+	}
+
+	.icon1, .icon2 {
+		display: none;
+	}
+	.icons {
+		margin-left: 0px;
+	}
+
+	.one {
+		float: none;
+		width: 100%;
+		margin: 0px;
+		margin-bottom: 50px;
+	}
+	.line {
+		display: none;
+	}
+
+	.cell {
+		display: block;
+		width: 70%;
+		margin: 0px auto 20px auto;
+	}
+	#subscribe {
+		width: 100%;
+	}
+ .button {
+ 	width: 100%;
+	left: 50%;
+ }
+ h2 {
+ margin-left: 0px;
+ font-size: 20px;
+ }
+
+.man {
+	background: none;
+	margin-top: 700px;
+}
+.maket  {
+	margin-top: -830px;
+	width: 100%;
+
+}
+.maket1  {
+	margin-top: -590px;
+	width: 100%;
+
+}
+.maket2  {
+	margin-top: -380px;
+	width: 100%;
+
+}
+.maket3  {
+	margin-top: -140px;
+	width: 100%;
+
+}
+#footer {
+	height: 100%;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+
+.wheel {
+	width: 100%;
+}
+#subscribe {
+	width: 100%;
+}
+.textwhat {
+	width: 100%;
+}
+.textrpt {
+	width: 100%;
+}
+.text-process {
+ min-width: 10%;
+ font-size: 13px;
+}
+.process img {
+	min-width: 10%;
+	height: 100px;
+}
+.needed {
+	width: 100%;
+}
+.man {
+margin-top: 350%;
+}
+.maket  {
+	margin-top: -370%;
+	width: 100%;
+
+}
+.maket1  {
+	margin-top: -268%;
+	width: 100%;
+
+}
+.maket2  {
+	margin-top: -178%;
+	width: 100%;
+
+}
+.maket3  {
+	margin-top: -75%;
+	width: 100%;
+
+}
+}
+@media screen and (max-width: 480px){
+.text-process {
+ width: 100%;
+ font-size: 13px;
+}
+.process img {
+	width: 100%;
+	height: 100px;
+}
+}
+
